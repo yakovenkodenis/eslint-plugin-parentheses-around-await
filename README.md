@@ -23,13 +23,13 @@ This plugin helps you to avoid a common mistake when using `async/await`: trying
 ### Usage
 
 `.eslintrc.js`
-```json
+```javascript
 module.exports = {
-  plugins: [
+  "plugins": [
     "eslint-plugin-parentheses-around-await"
   ],
   "rules": {
-    "parentheses-around-await": 1
+    "parentheses-around-await": 1 // 2 - error, 1 - warn, 0 - off.
   }
 };
 
