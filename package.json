@@ -1,0 +1,65 @@
+{
+  "name": "parentheses-around-await-eslint-plugin",
+  "version": "0.0.1",
+  "description": "The ESLint plugin to ensure you don't try to use properties on a not-yet-awaited values.",
+  "main": "lib/index.js",
+  "author": "Denis Yakovenko <yakovenko.denis.a@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start-tutorial": "rimraf \"src/rules/**/*\" && rimraf src/index.ts && npm un @typescript-eslint/parser",
+    "clean": "rimraf lib",
+    "prebuild": "rimraf node_modules/@types/eslint/node_modules/@types/estree",
+    "build": "tsc",
+    "prettier": "prettier \"*.{js,json,yml,yaml,md}\" \"src/**/*\"",
+    "format": "yarn prettier --write",
+    "format:check": "yarn prettier --check",
+    "test": "jest",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "files": [
+    "README.md",
+    "package.json",
+    "lib"
+  ],
+  "keywords": [
+    "eslint",
+    "typescript",
+    "esling-plugin",
+    "await"
+  ],
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "diagnostics": false
+      }
+    },
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "(src/.*\\.test)\\.ts$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "\\.d\\.ts$",
+      "lib/.*"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "json"
+    ]
+  },
+  "devDependencies": {
+    "@types/eslint": "^7.2.6",
+    "@types/estree": "^0.0.46",
+    "@types/node": "^14.14.22",
+    "@typescript-eslint/parser": "^4.14.0",
+    "eslint": "^7.18.0",
+    "husky": "^4.3.8",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3"
+  }
+}
