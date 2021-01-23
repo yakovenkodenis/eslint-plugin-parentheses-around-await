@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-parentheses-around-await",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The ESLint plugin to ensure you don't try to use properties on a not-yet-awaited values.",
   "main": "lib/index.js",
   "author": "Denis Yakovenko <yakovenko.denis.a@gmail.com>",
