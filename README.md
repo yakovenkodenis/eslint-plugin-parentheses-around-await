@@ -19,3 +19,18 @@ This plugin helps you to avoid a common mistake when using `async/await`: trying
  # or
  yarn add eslint-plugin-parentheses-around-await
 ```
+
+### Usage
+
+`.eslintrc.js`
+```json
+module.exports = {
+  plugins: [
+    "eslint-plugin-parentheses-around-await"
+  ],
+  "rules": {
+    "parentheses-around-await": 1
+  }
+};
+
+```
