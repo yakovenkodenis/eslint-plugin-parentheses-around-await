@@ -1,4 +1,4 @@
-# Parentheses around await
+# [WIP] Parentheses around await
 
 This plugin helps you to avoid a common mistake when using `async/await`: trying to access properties on an awaited value without wrapping it with parenthesis.
 
