@@ -22,7 +22,7 @@ This plugin helps you to avoid a common mistake when using `async/await`: trying
 
 ### Usage
 
-`.eslintrc.js`
+`.eslintrc.js`:
 ```javascript
 module.exports = {
   "plugins": [
