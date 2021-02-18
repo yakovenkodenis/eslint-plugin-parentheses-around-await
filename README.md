@@ -29,7 +29,7 @@ module.exports = {
     "eslint-plugin-parentheses-around-await"
   ],
   "rules": {
-    "parentheses-around-await": 1 // 2 - error, 1 - warn, 0 - off.
+    "parentheses-around-await/parentheses-around-await": 1 // 2 - error, 1 - warn, 0 - off.
   }
 };
 
