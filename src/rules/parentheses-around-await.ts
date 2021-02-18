@@ -8,7 +8,7 @@ const rule: Rule.RuleModule = {
         if (node.type) {
           context.report({
             message: `If you want to access properties on an awaited value,
-                      you should wrap the value with parantheses. If not, 
+                      you should wrap the value with parentheses. If not, 
                       you may get undefined which will lead to bugs.
                       `,
             node,

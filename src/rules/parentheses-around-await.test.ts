@@ -26,9 +26,9 @@ tester.run('parentheses-around-await', rule, {
       errors: [
         {
           message: `If you want to access properties on an awaited value,
-      you should wrap the value with parantheses. If not, 
-      you may get undefined which will lead to bugs.
-      `,
+                      you should wrap the value with parentheses. If not, 
+                      you may get undefined which will lead to bugs.
+                      `,
         },
       ],
     },
